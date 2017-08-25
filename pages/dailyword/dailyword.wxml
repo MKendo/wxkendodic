@@ -1,0 +1,11 @@
+<!--dailword.wxml-->
+<view class="container">
+  <view class="enties" wx:for="{{entryItems}}" style="display:flex; justify-content:flex-start;">
+      <view class="entry">{{item.key}} </view>
+      <view class="line" />
+      <view class="entry">{{item.description}}</view>    
+  </view>
+  <view class="section">
+      <button type="primary"  bindtap="nextone"> 再看一个 </button>
+  </view>
+</view>
